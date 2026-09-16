@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps & Cloud Engineer Resume</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gray: #64748b;
+            --border: #e2e8f0;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: var(--dark);
+            background-color: #cbd5e1;
+            line-height: 1.5;
+            padding: 2rem 1rem;
+        }
+        .resume-container {
+            max-width: 850px;
+            background: #ffffff;
+            margin: 0 auto;
+            padding: 2.5rem;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        header {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 1.5rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .header-info h1 {
+            font-size: 2.2rem;
+            color: var(--dark);
+            font-weight: 700;
+        }
+        .header-info h2 {
+            font-size: 1.2rem;
+            color: var(--primary);
+            font-weight: 600;
+            margin-top: 0.25rem;
+        }
+        .contact-info {
+            font-size: 0.9rem;
+            color: var(--gray);
+            text-align: right;
+        }
+        .contact-info a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        section {
+            margin-bottom: 1.5rem;
+        }
+        h3 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--primary);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.3rem;
+            margin-bottom: 0.8rem;
+        }
+        p, li {
+            font-size: 0.925rem;
+            color: #334155;
+        }
+        .summary {
+            margin-bottom: 1.5rem;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0.5rem 1rem;
+        }
+        .skill-category {
+            margin-bottom: 0.5rem;
+        }
+        .skill-category strong {
+            color: var(--dark);
+        }
+        .job {
+            margin-bottom: 1.2rem;
+        }
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+        }
+        .job-title {
+            font-weight: 600;
+            color: var(--dark);
+            font-size: 1rem;
+        }
+        .company {
+            color: var(--primary);
+            font-weight: 500;
+        }
+        .job-date {
+            font-size: 0.85rem;
+            color: var(--gray);
+        }
+        ul.job-details {
+            margin-top: 0.4rem;
+            padding-left: 1.2rem;
+        }
+        ul.job-details li {
+            margin-bottom: 0.25rem;
+        }
+        .certifications-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+        }
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+            }
+            .resume-container {
+                box-shadow: none;
+                padding: 0;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="resume-container">
+    <header>
+        <div class="header-info">
+            <h1>Alex Morgan</h1>
+            <h2>Senior DevOps & Cloud Engineer</h2>
+        </div>
+        <div class="contact-info">
+            <p>San Francisco, CA | Open to Remote</p>
+            <p><a href="mailto:alex.morgan@example.com">alex.morgan@example.com</a></p>
+            <p><a href="https://linkedin.com" target="_blank">linkedin.com/in/alexmorgan</a> | <a href="https://github.com" target="_blank">github.com/alexmorgan</a></p>
+        </div>
+    </header>
+
+    <section class="summary">
+        <h3>Professional Summary</h3>
+        <p>Results-driven DevOps and Cloud Engineer with 6+ years of experience designing, automating, and scaling cloud-native infrastructure on AWS. Proven expertise in Infrastructure as Code (Terraform), Kubernetes orchestration, CI/CD pipeline optimization, and multi-region observability. Passionate about enhancing developer velocity, system reliability, and cost-efficiency.</p>
+    </section>
+
+    <section>
+        <h3>Technical Skills</h3>
+        <div class="skills-grid">
+            <div class="skill-category"><strong>Cloud & Vendors:</strong> AWS (EKS, ECS, RDS, IAM, Lambda, S3, VPC)</div>
+            <div class="skill-category"><strong>Infrastructure as Code:</strong> Terraform, CloudFormation, Ansible</div>
+            <div class="skill-category"><strong>Containers & Orchestration:</strong> Docker, Kubernetes, Helm, ECS Fargate</div>
+            <div class="skill-category"><strong>CI/CD & GitOps:</strong> GitHub Actions, GitLab CI, ArgoCD, Jenkins</div>
+            <div class="skill-category"><strong>Monitoring & Logging:</strong> Prometheus, Grafana, Datadog, ELK Stack</div>
+            <div class="skill-category"><strong>Languages & Scripting:</strong> Python, Bash, Go, YAML</div>
+        </div>
+    </section>
+
+    <section>
+        <h3>Professional Experience</h3>
+        
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <span class="job-title">Senior DevOps Engineer</span> — <span class="company">CloudScale Technologies</span>
+                </div>
+                <div class="job-date">2023 — Present</div>
+            </div>
+            <ul class="job-details">
+                <li>Spearheaded the migration of legacy monolith infrastructure to microservices on AWS EKS, cutting hosting costs by 32%.</li>
+                <li>Architected and managed multi-environment GitOps workflows using ArgoCD and GitHub Actions, reducing deployment time from 45 minutes to under 5 minutes.</li>
+                <li>Implemented comprehensive cluster observability using Prometheus, Grafana, and Datadog, decreasing MTTR (Mean Time to Resolution) by 40%.</li>
+                <li>Enforced cloud security compliance policies using Terraform Cloud and automated vulnerability scanning in container registries.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <span class="job-title">DevOps Engineer</span> — <span class="company">Apex Software Solutions</span>
+                </div>
+                <div class="job-date">2020 — 2023</div>
+            </div>
+            <ul class="job-details">
+                <li>Developed modular Terraform configurations to provision secure AWS environments across staging and production stages.</li>
+                <li>Maintained and scaled high-availability AWS ECS Fargate clusters with integrated Application Load Balancers (ALB) and auto-scaling policies.</li>
+                <li>Automated database backup routines, automated patching schedules, and disaster recovery drills.</li>
+                <li>Collaborated closely with development teams to containerize legacy apps with Docker and streamline local developer setups.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <span class="job-title">Junior Cloud Engineer</span> — <span class="company">InnoTech Systems</span>
+                </div>
+                <div class="job-date">2018 — 2020</div>
+            </div>
+            <ul class="job-details">
+                <li>Managed AWS IAM user permissions, security groups, and VPC network peering connections.</li>
+                <li>Wrote Bash and Python scripts to automate daily operational tasks and log rotation routines.</li>
+                <li>Assisted in setting up initial CI/CD build scripts using Jenkins and GitLab CI.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h3>Education & Certifications</h3>
+        <div style="margin-bottom: 0.5rem;">
+            <strong>B.S. in Computer Science</strong> — University of California, Berkeley (2018)
+        </div>
+        <div class="certifications-list">
+            <div>✓ AWS Certified Solutions Architect – Professional</div>
+            <div>✓ AWS Certified DevOps Engineer – Professional</div>
+            <div>✓ Certified Kubernetes Administrator (CKA)</div>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
